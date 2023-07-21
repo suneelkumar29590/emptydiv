@@ -21,3 +21,11 @@ Content-Type: application/json
    "email":"cherri657@gamail.com",
    "password":"cherri324"
 }
+
+###
+GET http://localhost:3006/alldevelopers
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjRiOWU1ZjcxZTkyOWQzNDQ3NjA0ODlmIiwiaWF0IjoxNjg5OTMwNjgwLCJleHAiOjE3MjU5MzA2ODB9.V1G5h6nt8l8nzwzKAJ8MVQhTjQcLmxWn4WXFCzrenO4
+
+###
+GET http://localhost:3006/individualprofile/64b9d707dbf73c27677ff5ec
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjRiOWU1ZjcxZTkyOWQzNDQ3NjA0ODlmIiwiaWF0IjoxNjg5OTMwNjgwLCJleHAiOjE3MjU5MzA2ODB9.V1G5h6nt8l8nzwzKAJ8MVQhTjQcLmxWn4WXFCzrenO4

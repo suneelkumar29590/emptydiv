@@ -4,10 +4,11 @@ const cors =require("cors");
 const usersData=require("./model/userdetails");
 const bcrypt=require("bcrypt");
 const jwt=require("jsonwebtoken");
+const middleware=require("./middleware")
 
 
 const app = express();
- const port =3005
+ const port =3006
 
  const mongURI="mongodb+srv://suneelkumar29590:UfuEaPytFV46FbTr@cluster0.37lou9p.mongodb.net/apitoken?retryWrites=true&w=majority"
 
@@ -92,7 +93,22 @@ app.post("/login", async(req,res)=>{
     }
 })
 
+// get all developers data
 
+app.get("/alldevelopers",  middleware,async(req,res)=>{
+    const alldevelopers=await usersData.find({});
+    return res.json(alldevelopers);
+})
+
+// get inviduval profile
+app.get("/individualprofile/:id", middleware, async(req,res)=>{
+    const {id}= req.params;
+    const individualuser= await usersData.findById({_id: id});
+    if(!individualuser){
+        return res.send("user not found")
+    }
+    return res.send(individualuser)
+})
 
 
 
