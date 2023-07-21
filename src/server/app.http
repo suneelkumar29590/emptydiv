@@ -1,0 +1,23 @@
+GET http://localhost:3002/
+
+###
+POST http://localhost:3004/register/
+Content-Type: application/json
+
+{
+   "fullname":"charan",
+   "email":"cherri657@gamail.com",
+   "mobile":7434563337,
+   "skills":"node.js",
+   "password":"cherri324" ,
+   "confirmPassword":"cherri324" 
+}
+
+###
+POST http://localhost:3005/login 
+Content-Type: application/json
+
+{
+   "email":"cherri657@gamail.com",
+   "password":"cherri324"
+}
