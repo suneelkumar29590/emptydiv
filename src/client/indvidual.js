@@ -17,7 +17,7 @@ function Inddeveloper(){
 
     const onSubmitHandler=e=>{
         e.preventDefault()
-        axios.get('http://localhost:4005/individualprofile',{
+        axios.get('http://localhost:4001/individualprofile',{
             headers:{
                 'token':localStorage.getItem('token')
             }
@@ -32,7 +32,7 @@ function Inddeveloper(){
             rating
         }
         console.log(review);
-        axios.post('http://localhost:4009/addreview', review ,{
+        axios.post('http://localhost:4001/addreview', review ,{
             headers:{
                 'token':localStorage.getItem('token')
             }

@@ -47,7 +47,7 @@ function Register() {
       confirmPassword !== ""
     ) {
       axios
-        .post("http://localhost:4009/register", usersData)
+        .post("http://localhost:4001/register", usersData)
         .then((response) =>   {
           setdata(response.data);
         

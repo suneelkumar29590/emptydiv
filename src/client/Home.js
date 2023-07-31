@@ -12,7 +12,7 @@ function HomePage(){
 
 
 useEffect(()=>{
-    axios.get("http://localhost:4009/alldevelopers",{
+    axios.get("http://localhost:4001/alldevelopers",{
         headers:{
             "token":localStorage.getItem('token')
         }

@@ -9,7 +9,7 @@ const review =require('./reviewmodel')
 
 
 const app = express();
- const port =4009
+ const port =4001
 
  const mongURI="mongodb+srv://suneelkumar29590:UfuEaPytFV46FbTr@cluster0.37lou9p.mongodb.net/apitoken?retryWrites=true&w=majority"
 
@@ -120,13 +120,15 @@ app.get("/individualprofile/:id", middleware, async(req,res)=>{
 app.post('/addreview', middleware, async(req,res)=>{
     try{
         const {taskworker,rating}=req.body;
-        const existUser = await usersData.findOne(req.user.id);
+        console.log(req.user)
+        const existUser = await usersData.findById(req.user);
         console.log(existUser);
         const newReview=new review({
             taskprovider:existUser.fullname,
             taskworker,
             rating 
         })
+        console.log(newReview);
         newReview.save();
         return res.send('review updated successfully')
     }catch(err){

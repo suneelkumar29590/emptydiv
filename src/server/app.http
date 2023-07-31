@@ -1,7 +1,7 @@
-GET http://localhost:4009/
+GET http://localhost:4001/
 
 ###
-POST http://localhost:4009/register/
+POST http://localhost:4001/register/
 Content-Type: application/json
 
 {
@@ -14,7 +14,7 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:4009/login 
+POST http://localhost:4001/login 
 Content-Type: application/json
 
 {
@@ -23,17 +23,17 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:4009/alldevelopers
-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjRiOWU1ZjcxZTkyOWQzNDQ3NjA0ODlmIiwiaWF0IjoxNjg5OTMwNjgwLCJleHAiOjE3MjU5MzA2ODB9.V1G5h6nt8l8nzwzKAJ8MVQhTjQcLmxWn4WXFCzrenO4
+GET http://localhost:4001/alldevelopers
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjRiOWU1ZjcxZTkyOWQzNDQ3NjA0ODlmIiwiaWF0IjoxNjkwNzk2MjQzLCJleHAiOjE3MjY3OTYyNDN9.B9CI6QoYhoAJPm8HCz3_OQmuWHkxTRWBUmNbpke35WI
 
 ###
-GET http://localhost:4009/individualprofile/64b9daf8e0114888264639bd
-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjRiOWU1ZjcxZTkyOWQzNDQ3NjA0ODlmIiwiaWF0IjoxNjg5OTMwNjgwLCJleHAiOjE3MjU5MzA2ODB9.V1G5h6nt8l8nzwzKAJ8MVQhTjQcLmxWn4WXFCzrenO4
+GET http://localhost:4001/individualprofile/64b9daf8e0114888264639bd
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjRiOWU1ZjcxZTkyOWQzNDQ3NjA0ODlmIiwiaWF0IjoxNjkwNzk2MjQzLCJleHAiOjE3MjY3OTYyNDN9.B9CI6QoYhoAJPm8HCz3_OQmuWHkxTRWBUmNbpke35WI
 
 ###
-POST http://localhost:4009/addreview/
+POST http://localhost:4001/addreview/
 Content-Type: application/json
-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjRiOWU1ZjcxZTkyOWQzNDQ3NjA0ODlmIiwiaWF0IjoxNjg5OTMwNjgwLCJleHAiOjE3MjU5MzA2ODB9.V1G5h6nt8l8nzwzKAJ8MVQhTjQcLmxWn4WXFCzrenO4
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjRjNzg4ZDMxYjVkZjBmY2Y5ZmE1ZTk4IiwiaWF0IjoxNjkwNzk4MzEyLCJleHAiOjE3MjY3OTgzMTJ9.8Wt3DsG2a0skUhOZAtnFjEwMpdHaWAlg943pjTL4-AI
 
 
 
