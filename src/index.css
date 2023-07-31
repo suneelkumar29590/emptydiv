@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.profile-container{
+  background-color: rgb(198, 198, 219);
+  margin-top: 20px;
+  border-radius: 30px;
+  box-shadow: 2px 2px;
+}
+.text-success{
+  list-style-type:none;
+}

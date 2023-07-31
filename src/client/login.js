@@ -31,7 +31,7 @@ function LoginPage() {
       const onSubmitBtn=e=>{
         e.preventDefault();
     if(email && password !== ''){
-        axios.post("http://localhost:3006/login",usersData)
+        axios.post("http://localhost:4009/login",usersData)
         .then(response=>{
             if(response.status === 200){
                 let jwtToken = response.data.token
@@ -48,7 +48,10 @@ function LoginPage() {
                         theme: "colored",
                       });
 
-                      navigate("/home")
+                      setTimeout(function(){
+                        navigate('/home')
+                       }, 3000)
+                        
             }
         })
         .catch(error =>{

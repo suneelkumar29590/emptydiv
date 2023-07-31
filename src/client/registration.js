@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import axios, { Axios } from "axios";
 
 
-import { ToastContainer, toast,navigate } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
 
@@ -47,7 +47,7 @@ function Register() {
       confirmPassword !== ""
     ) {
       axios
-        .post("http://localhost:3006/register", usersData)
+        .post("http://localhost:4009/register", usersData)
         .then((response) =>   {
           setdata(response.data);
         
@@ -56,7 +56,7 @@ function Register() {
             
             toast.success("Registration Successfull", {
               position: "top-right",
-              autoClose: 5000,
+              autoClose: 1000,
               hideProgressBar: false,
               closeOnClick: true,
               pauseOnHover: true,
@@ -64,11 +64,13 @@ function Register() {
               progress: undefined,
               theme: "colored"
             });
-            
+           setTimeout(function(){
+            navigate('/reg')
+           }, 3000)
             
             
           }
-          navigate("/reg");
+          
         })
         .catch((error) => {
           console.log(error.message);

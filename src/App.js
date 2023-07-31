@@ -8,6 +8,7 @@ import LoginPage from './client/login';
 
 import HomePage from './client/Home';
 import Header from './client/Header';
+import Inddeveloper from './client/indvidual';
 
 
 
@@ -21,6 +22,7 @@ function App() {
         <Route exact path='/login'  element={<LoginPage/>}/>
         <Route exact path='/home'  element={<HomePage/>}/>
         <Route exact path='/header'  element={<Header/>}/>
+        <Route exact path='/indprofile/:fullname/:email/:skills/:id'  element={<Inddeveloper/>}/>
       
        
 
